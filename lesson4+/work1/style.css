@@ -1,0 +1,38 @@
+ .conteiner{
+    max-width: 790px;
+    margin: 0 auto;
+ }
+ *{
+     text-align: center;
+ }
+
+.top{
+    margin: 0 auto;
+    max-width: 790px;
+    color: #fff;
+    background: #a52a2a;
+}
+.imgline img{
+    border-color:#000;
+    border-width: 3px;
+    border-style: dashed;
+} 
+main p{
+    margin-left: 8px;
+    text-align: left;
+    font-size: 18px;
+}
+.down{
+    background-color: #000;  
+    color: #fff;
+    font-size: 20px;
+}
+.down p{
+    text-align: center;
+}
+article p .eius{
+    color: #0000ff;
+}
+p span{
+    color: #0000ff;
+}

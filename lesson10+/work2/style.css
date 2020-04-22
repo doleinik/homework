@@ -1,0 +1,113 @@
+@font-face {
+    font-family: "MyriadPro-Regular";
+  
+    src: url("./fonts/MyriadPro-Regular.woff") format("woff"), /* Modern Browsers */
+      url("./fonts/MyriadPro-Regular.woff2") format("woff2"); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+  }
+.conteiner{
+    text-align: center;
+    width: 1170px;
+    margin: 0 auto;
+}
+h1{
+    margin-top: 100px;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    font-size: 34px;
+    color: #3c3c3c;
+    word-spacing: 12px;
+    letter-spacing: 6px;
+}
+.front img{
+    width: 270px;
+    height: 270px;
+}
+.blockimg{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+.block{
+    text-align: left;
+}
+.border{
+    margin: 0 auto;
+    border-bottom: 4px solid #dddbdb;
+    width: 45px;
+    margin-bottom: 35px;
+}
+.line2{
+    margin: 0 auto;
+    max-width: 570px;
+    font-size: 16px;
+    color: #3c3c3c;
+    font-family: "MyriadPro-Regular";
+}
+.name{
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #282528;
+    margin-top: 20px;
+}
+.work{
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    color: #646464;
+}
+.back{
+    background-color: #18b5dc;
+    
+}
+.flip-container {
+	perspective: 1000px;
+}
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+    transform: rotateY(180deg);
+}
+.flip-container, .front, .back {
+	width: 270px;
+	height: 270px;
+}
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+.back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotateY(180deg);
+    color: blanchedalmond;
+}
+.back a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    height: 42px;
+    background-color: #5ecbe7;
+}
+.social{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:130px;
+    height:  40px;
+}

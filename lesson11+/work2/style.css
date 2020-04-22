@@ -1,0 +1,123 @@
+@font-face {
+    font-family: "MuseoSansRounded-100";
+  
+    src: url("./fonts/MuseoSansRounded-100.woff") format("woff"), /* Modern Browsers */
+      url("./fonts/MuseoSansRounded-100.woff2") format("woff2"); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+  }
+*{
+    margin: 0;
+    padding: 0;
+}
+.body{
+    background: url(images/backgraund.jpg)no-repeat;
+    background-size: 100%;
+}
+.container{
+    background-color: #111a28;
+    width: 100%;
+    max-width: 685px;
+    margin: 0 auto;
+    margin-top: 110px;
+    margin-bottom: 100px;
+    padding-bottom: 20px;
+}
+.logo__img{
+    margin: 25px  0 0 20px;
+}
+.content{
+    display: flex;
+}
+.content__left{
+    max-width: 390px;
+
+}
+.picture__img{
+    margin: 35px;
+}
+.content__right{
+    max-width: 295;
+    padding-right: 55px;
+    padding-left: 40px;
+    font-family: "MuseoSansRounded-100";
+}
+.product-info__title{
+    color: #e1e1e1;
+    font-size: 24px;
+}
+.product-info__model{
+    margin-top: 10px;
+    color: #49505a;
+    font-size: 14px;
+}
+.product-info__rating {
+    padding: 25px 0;
+    width: 125px;
+    height: 25px;
+  }
+  .rating-stars input[type="radio"] {
+    display: none;
+  }
+  .rating-stars__label {
+    float: right;
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: url(images/rating.png) no-repeat 50% 0;
+    cursor: pointer;
+  }
+  /*Пишем правила смены положения background-а*/
+  .rating-stars .rating-stars__label:hover ~ .rating-stars__label, /*Правило для всех следующих лейблов по DOM дереву*/
+  .rating-stars input[type="radio"]:checked ~ .rating-stars__label, /*Правило для всех следующих лейблов после выбранного инпута, чтобы звездочки как бы зафиксировались*/
+  .rating-stars .rating-stars__label:hover /*Правило для ховера на текущий лейбл*/
+  {
+    background-position: 50% -25px;
+  }
+.right-form__select{
+    background: #111a28;
+    border: 1px solid #4f5560;
+    color: #4f5560;
+    margin-bottom: 30px;
+}
+.content__right__button{
+    
+    font-family: "MuseoSansRounded-100";
+    background: #202835;
+    border: 1px solid #4f5560;
+    color: #e1e1e1;
+    padding: 14px 54px;
+    text-decoration: none;
+}
+.selector-list{
+    margin: 0 auto;
+    display: flex;
+    width: 75px;
+    height: 18px;
+    align-items: center;
+}
+.selector-list__item {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    list-style-type: none;
+    margin: 0 4px;
+}
+.selector-list__item:hover{
+    border: 2px solid #7b8188;
+    margin: 0 2px;
+}
+.list__item--blue{
+    background-color: #1f273f;
+    margin-left: 2;
+}
+.list__item--white{
+    background-color: #fff;
+}
+.list__item--red{
+    background-color: #ed3333;
+}
+.list__item--green{
+    background-color: #29e3ea;
+    margin-right: 0;
+}

@@ -1,0 +1,96 @@
+body{
+    text-align: center;
+}
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    
+}
+.blocks{
+    display: flex;
+    margin: 10px 170px;
+}
+ 
+#line1{
+    margin-top: 173px;
+    color:#898f99;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+#line2{
+    margin-top: 35px;
+    font-size: 48px;
+    color: #0ec8cb;
+    font-family: 'Open Sans', sans-serif;
+}
+#line3{
+    margin-top: 45px;
+    margin-bottom: 108px;
+    font-family: 'Arial';
+    font-size: 18px;
+    color: #999999;
+}
+.block{
+    border: 1px solid #ededed;
+    width: 230px;
+    height: 420px;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+.blockHeader{
+
+    font-family: 'Open Sans', Regular;
+    font-weight: 600;
+    font-size: 18px;
+    vertical-align: middle;
+}
+.blockText{
+    font-size: 14px;
+    font-family: Arial;
+    color: #777777;
+}
+.icon{
+    margin-top: 56px;
+    margin-bottom: 48px;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background-image: url(images/sprite.png);
+}
+.anhor{
+    background-position: 0 0;
+}
+.block:hover .anhor{
+    background-position: 0 -98px;
+}
+.diamant{
+    background-position:  -110px 0;
+}
+.block:hover .diamant{
+    background-position:  -110px -98px;
+}
+.eyeglasses{
+    background-position: -220px 0;
+}
+.block:hover .eyeglasses{
+    background-position: -220px -98px  ;
+}
+.monitor{
+    background-position: -333px 0;
+}
+.block:hover .monitor {
+    background-position: -333px -98px ;
+}
+.block img{
+    margin: 56px 0;
+    width: 65px;
+    height: 65px;
+}
+.block:hover {
+    background-color: #0ec8cb;
+    color: #fff;
+}
+.block:hover .blockText {
+    color: #fff;
+}

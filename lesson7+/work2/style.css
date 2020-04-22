@@ -1,0 +1,101 @@
+body{
+    
+    margin: 0;
+    background-color: #3399cc;
+    border: 24px solid #2b81ac;
+}
+ p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    
+}
+ul{
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+li{
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    font-family:  "Lucida Grande", sans-serif;
+    padding-top: 36px;
+    padding-bottom: 16px; 
+    margin-left: 6px;
+    margin-top: 6px;
+    display: inline-block;
+    list-style-type: none; 
+    
+}
+.wi{
+    font-size: 27px;
+}
+li p{
+    margin-top: 28px;
+    color: #bfdfef;
+}
+
+.weather{
+    margin: 0 auto;
+    width: 985px;
+    max-width: 100%;
+    
+}
+.width25{
+    width: calc(25% - 6px);
+}
+.width50{
+    width: calc(50% - 6px);
+}
+
+.line li:nth-child(1){
+    background-color: #3399cc;
+}
+.line li:nth-child(2){
+    background-color: #33cccc;
+}
+.line li:nth-child(3){
+    width: calc(25% - 12px);
+    background-color: #996699;
+}
+.line li:nth-child(4){
+    background-color: #c24747;
+}
+.line li:nth-child(5){
+    background-color: #e2674a;
+}
+.line li:nth-child(6){
+    background-color: #ffcc66;
+}
+.line li:nth-child(7){
+    
+    width: calc(25% - 12px);
+    background-color: #99cc99;
+}
+.line li:nth-child(8){
+    background-color: #669999;
+}
+.line li:nth-child(9){
+    background-color: #cc6699;
+}
+.line li:nth-child(10){
+    width: calc(25% - 12px);
+    background-color: #339966;
+}
+.line  li:nth-child(11){
+    height: calc(25% - 6px);
+    text-align: center;
+    margin: 6px;
+    width: calc(100% - 12px);
+    background-color: #666699;
+}
+.table:hover li:not(:hover){
+    opacity: 0.5;
+}
+.down{
+    font-size: 14px;
+    font-family: "Lucida Sans Unicode";
+    margin-bottom: 140px;
+    margin-top: 36px;
+}

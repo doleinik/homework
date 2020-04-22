@@ -1,0 +1,53 @@
+@font-face {
+    font-family: "MyriadPro-Regular";
+  
+    src: url("./fonts/8143.woff") format("woff"), /* Modern Browsers */
+      url("./fonts/8143.woff2") format("woff2"); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+  }
+.conteiner{ 
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 10px;
+    max-width: 1400px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 120px 50px;
+   
+   
+}
+h1{
+    font-size: 42px;
+    font-family: 'Playfair Display',Regular, sans-serif;
+}
+.firstLeter:first-letter{
+    color: black;
+    font-family: 'Playfair Display', serif;
+    font-size: 110px;
+    float: left;
+    padding-top: 5px;
+    margin: 0.2em 30px 25px 0;
+    
+}
+p{
+    padding:  0 20x;
+    color: #7a7a7a;
+    font-family: 'MyriadPro-Regular', sans-serif;
+    font-size: 18px;
+    line-height: 2em;
+}
+.quote{
+    font-family: 'MyriadPro-Regular',Regular, sans-serif;
+    font-size: 24px;
+}
+sup{
+    font-size: 40px;
+}
+button{
+    color: #eaa258;
+    background-color: #fff;
+    border: 2px solid #eaa258;
+    padding:25px 75px ;
+    font-family: 'Lato', sans-serif;
+    margin-top: 40px;
+}

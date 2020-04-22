@@ -1,0 +1,64 @@
+body{
+    background-color: #fdde7e;
+    margin: 0 0;
+    padding:  0 0;
+}
+.conteiner{
+    width: 1140px;
+    max-width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 50px;
+    
+}
+@font-face {
+    font-family: "Miso";
+  
+    src: url("./fonts/miso-bold.woff2") format("woff2"); /* Modern Browsers */
+    
+    font-style: normal;
+  }
+li{
+    list-style-type: none;
+}
+.content{
+    margin: 28px 0;
+    background-color: #ffffff;
+    width: 360px;
+    
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+}
+
+p{
+    line-height: normal;
+}
+.img2{
+    margin-top: 35px;
+}
+span{
+    
+    font-size: 56px;
+}
+.prise{
+    font-family: "Miso", sans-serif;
+    font-weight: 800;
+    font-size: 70px;
+    color: green;
+    margin-top: 43px;
+    margin-bottom: 23px;
+}
+.abouts{
+    font-family: 'Baloo Da 2', cursive;
+    font-weight: 400;
+    font-size: 20px;
+   
+
+    line-height: normal;
+}
+.block2{
+    margin-top: 0;
+    margin-bottom: 0;
+}

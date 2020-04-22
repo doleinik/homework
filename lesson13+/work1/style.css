@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+body{
+    background-color: #70bfff;
+}
+.container{
+    display: flex;
+    width: 1070px;
+    margin: 0 auto;
+}
+.container_right{
+    position: relative;
+    height: 460px;
+    
+    display: flex;
+    
+}
+.container_button{
+    margin-top: 180px;
+    height: 460px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+ .button{
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    display: flex;
+    width: 400px;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+}
+.button_left{
+    top: 1px;
+    width: 99px;
+    height: 97px;
+    border-left: 1px solid #666;
+}
+.button_text{
+    max-width: 299px;
+    margin: 0 auto;
+    color: #000;
+}
+.container_left{
+    position: relative;
+}
+.container_left .imagen_left{
+    width: 462;
+    margin-top: 100px;
+    position: absolute;
+    margin-left: 210px;
+    left: 0;
+}
+h1{
+   width: 700px; 
+} 
+.h1_left{
+    margin-left: 130px;
+    position: absolute;
+    top:300px;
+    font-size: 50px;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+
+}
+.icon_button{
+    width: 100px;
+    height: 100px;
+    border-left: 2px solid #666;
+    
+}
+
+.icon{
+    margin-top: 25px;
+    width: 44px;
+    height: 47px;
+}
