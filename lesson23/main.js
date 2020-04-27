@@ -171,6 +171,10 @@ function nextDate() {
     if (n < 10) {
         n = '0' + n;
     }
+    if(n > 12){
+        n =1;
+        g++;
+    }
 
     document.getElementById('text10').innerHTML = 'Naxt Data:' + d + '.' + n + '.' + g;
 }
