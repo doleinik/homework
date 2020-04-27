@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dima Oleinik</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="task">
+            <fieldset>
+                <legend>Task 1</legend>
+                <input type="text" id="age" placeholder="Enter your age">
+                <button type="button" onclick="yourStatus()">send</button>
+                <span id="text1"></span>
+            </fieldset>
+        </div>
+        <div class="task2">
+            <fieldset>
+                <legend>Task 2</legend>
+                <input type="text" id="number2" placeholder="Enter number">
+                <button type="button" onclick="someNomber()">send</button>
+                <span id="text2"></span>
+            </fieldset>
+        </div>
+        <div class="task3">
+            <fieldset>
+                <legend>Task 3</legend>
+                <input type="text" id="number3" placeholder="Enter number">
+                <button type="button" onclick="someChislo()">send</button>
+                <span id="text3"></span>
+            </fieldset>
+        </div>
+        <div class="task4">
+            <fieldset>
+                <legend>Task 4</legend>
+                <input type="text" id="year4" placeholder="Enter year">
+                <button type="button" onclick="someYear()">send</button>
+                <span id="text4"></span>
+            </fieldset>
+        </div>
+        <div class="task5">
+            <fieldset>
+                <legend>Task 5</legend>
+                <input type="text" id="number5" placeholder="Enter number">
+                <button type="button" onclick="someNumber5()">send</button>
+                <span id="text5"></span>
+            </fieldset>
+        </div>
+        <div class="task6">
+            <fieldset>
+                <legend>Task 6</legend>
+                <input type="text" id="money" placeholder="Enter number">
+                <select onchange="" id="mySelect">
+                    <option value="1">EUR</option>
+                    <option value="2">UAN</option>
+                    <option value="3">AZN</option>
+                </select>
+                <button type="button" onclick="convertor()">send</button>
+                <span id="text6"></span>
+            </fieldset>
+        </div>
+        <div class="task7">
+            <fieldset>
+                <legend>Task 7</legend>
+                <input type="text" id="prise" placeholder="Enter summ">
+                <button type="button" onclick="shop()">send</button>
+                <span id="text7"></span>
+            </fieldset>
+        </div>
+        <div class="task8">
+            <fieldset>
+                <legend>Task 8</legend>
+                <input type="text" id="kolo" placeholder="Enter radius kola">
+                <input type="text" id="kvadrat" placeholder="Enter perimetr kvadrata">
+                <button type="button" onclick="proverkaKola()">send</button>
+                <span id="text8"></span>
+            </fieldset>
+        </div>
+        <div class="task9">
+            <fieldset>
+                <legend>Task 9</legend>
+                <form>
+                    <p>2+2=<span id="test1"></span></p>
+
+                    <input type="radio" id="contactChoice1" name="contact" value="0">
+                    <label for="contactChoice1">2</label>
+
+                    <input type="radio" id="contactChoice2" name="contact" value="2">
+                    <label for="contactChoice2">4</label>
+
+                    <input type="radio" id="contactChoice3" name="contact" value="0">
+                    <label for="contactChoice3">5</label>
+                </form>
+                <form>
+                    <p>2+3=<span id="test2"></span></p>
+                    <div class="radios">
+                        <input type="radio" id="contactChoice2_1" name="contact" value="0">
+                        <label for="contactChoice1">3</label>
+
+                        <input type="radio" id="contactChoice2_2" name="contact" value="2">
+                        <label for="contactChoice2">5</label>
+
+                        <input type="radio" id="contactChoice2_3" name="contact" value="0">
+                        <label for="contactChoice3">8</label>
+                    </div>
+                </form>
+                <form>
+                    <p>2+4=<span id="test3"></span></p>
+                    <div class="radios">
+                        <input type="radio" id="contactChoice3_1" name="contact" value="2">
+                        <label for="contactChoice1">6</label>
+
+                        <input type="radio" id="contactChoice3_2" name="contact" value="0">
+                        <label for="contactChoice2">8</label>
+
+                        <input type="radio" id="contactChoice3_3" name="contact" value="0">
+                        <label for="contactChoice3">9</label>
+                    </div>
+                </form>
+                <br>
+                <button type="button" onclick="test9()">send</button>
+                <br>
+                <span id="text9"></span>
+
+            </fieldset>
+        </div>
+        <div class="task10">
+            <fieldset>
+                <legend>Task 10</legend>
+                <input type="date" id="data" value="2020-04-24">
+                <input type="button" value="Next day" onclick="nextDate()">
+                <br>
+                <span id="text10"></span>
+            </fieldset>
+
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
