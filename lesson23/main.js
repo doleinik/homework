@@ -136,45 +136,64 @@ function test9() {
     document.getElementById('text9').innerText = rez + " b";
 }
 function nextDate() {
-    let nd = document.getElementById('data').value,
+    let nod = document.getElementById('data').value,
         ond;
-    ond = nd.split('-');
-
+    ond = nod.split('-');
     let d = parseInt(ond[2]),
-        n = parseInt(ond[1]),
+        m = parseInt(ond[1]),
         g = parseInt(ond[0]);
-    if (n % 2 === 0) {
 
-        if (d === 30) {
-            d = 1;
-            n += 1;
-        } else {
-            d++;
-        }
-    } else if (n === 3 && g % 4 === 0) {
-        if (d === 28) {
-            d = 1;
-            n += 1;
-        }
-    } else {
-        if (d === 31) {
-            d = 1;
-            n += 1;
-        } else {
-            d++;
-        }
+    let nd = d + 1;
+    let nm = m;
+    let ng = g;
+
+    switch (m) {
+        case 1:
+        case 3:
+        case 5:
+        case 7:
+        case 8:
+        case 10:
+        case 12:
+            if (nd === 32) {
+                nd = 1;
+                nm++;
+            }
+            break;
+        case 4:
+        case 6:
+        case 9:
+        case 11:
+            if (nd == 31) {
+                nd = 1;
+                nm++;
+            }
+            break;
+        case 2:
+            if (g % 400 === 0) {
+                if (nd === 30) {
+                    nd = 1;
+                    nm++;
+                }
+            } else {
+                if (nd === 29) {
+                    nd = 1;
+                    nm++;
+                }
+            }
+            break;
+
+    }
+    if (nm === 13) {
+        nm = 1;
+        ng++;
     }
 
-    if (d < 10) {
-        d = '0' + d;
+    if (nd < 10) {
+        nd = '0' + nd;
     }
-    if (n < 10) {
-        n = '0' + n;
+    if (nm < 10) {
+        nm = '0' + nm;
     }
-    if(n > 12){
-        n =1;
-        g++;
-    }
-
-    document.getElementById('text10').innerHTML = 'Naxt Data:' + d + '.' + n + '.' + g;
+    document.getElementById('text10').innerHTML = 'Naxt Data:' + nd + '.' + nm + '.' + ng;
 }
