@@ -18,12 +18,39 @@ function yourStatus() {
     }
 }
 function someNomber() {
-    let arr = [')', '!', '@', '#', '$', '%', '^', '&', '*', '*', '('],
-        num = Number(document.getElementById('number2').value);
-    if (num == 0) {
-        alert('error');
-    } else {
-        document.getElementById('text2').innerHTML = arr[num];
+    let num = parseInt(document.getElementById('number2').value);
+
+    switch (num) {
+        case 0:
+            document.getElementById('text2').innerHTML = ')';
+            break;
+        case 1:
+            document.querySelector('#text2').innerHTML = "!";
+            break;
+        case 2:
+            document.querySelector('#text2').innerHTML = "@";
+            break;
+        case 3:
+            document.querySelector('#text2').innerHTML = "#";
+            break;
+        case 4:
+            document.querySelector('#text2').innerHTML = "$";
+            break;
+        case 5:
+            document.querySelector('#text2').innerHTML = "%";
+            break;
+        case 6:
+            document.querySelector('#text2').innerHTML = "^";
+            break;
+        case 7:
+            document.querySelector('#text2').innerHTML = "&";
+            break;
+        case 8:
+            document.querySelector('#text2').innerHTML = "*";
+            break;
+        case 9:
+            document.querySelector('#text2').innerHTML = "(";
+            break;
     }
 }
 function someChislo() {
@@ -45,7 +72,7 @@ function someChislo() {
 }
 function someYear() {
     let year = document.getElementById('year4').value;
-    if (year == '' || year < 999) {
+    if (year == '') {
         alert('error')
     } else {
         if (year % 400 == 0 || year % 4 == 0) {
@@ -86,10 +113,10 @@ function convertor() {
             document.getElementById('text6').innerHTML = money * eur + ' EUR';
             break;
         case 1:
-            document.getElementById('text6').innerHTML = money * uan + ' EUR';
+            document.getElementById('text6').innerHTML = money * uan + ' UAH';
             break;
         case 2:
-            document.getElementById('text6').innerHTML = money * azn + ' EUR';
+            document.getElementById('text6').innerHTML = money * azn + ' AZN';
             break;
     }
 }

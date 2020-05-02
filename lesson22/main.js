@@ -13,8 +13,9 @@ function sideSquare() {
     alert('Perimetr square:' + (s * 4))
 }
 function radiusKola() {
-    let r = document.getElementById('radius').value;
-    alert('Radius kola:' + r)
+    let r = document.getElementById('radius').value,
+        s = 3.14 * (r ** 2);
+    alert('Radius kola:' + s)
 }
 function speed() {
     let d = document.getElementById('distance').value;
@@ -34,7 +35,7 @@ function sizeFlash() {
 function check() {
     let money = document.getElementById('money').value,
         prise = 20;
-    alert('You can by ' + parseInt(money / prise) + ' chocolads')
+    alert('You can by ' + parseInt(money / prise) + ' chocolads' + ' i ostanetsa ' + money % prise + ' UAH');
 }
 function numbers() {
     let number = document.getElementById('number').value,
