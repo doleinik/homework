@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}    
+body{
+    background-color: black;
+    color: #fff;
+    text-align: center;
+}
+li{
+    list-style-type: none;
+    width: 50%;
+    margin: 0 auto;
+}
+.all{
+    display: flex;
+    justify-content: space-between;
+}
+.getCheck{
+    width: 50%;
+    border-left: 2px solid #fff;
+    background-color: #666;
+    width: 400px;
+}
+.addBlock{
+    margin: 0 auto;
+}
+.task4{
+    display: flex;
+    justify-content: space-around;
+}

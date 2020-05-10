@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <ul>
+        <li>
+            <fieldset>
+                <legend>Task1</legend>
+                <span></span>
+                <br>
+                <input type="text" id="enterName" placeholder="Enter name product">
+                <input type="number" id="enterKols" placeholder="Enter kolichestvo">
+                <select id="statysProducts">
+                    <option value="0">ne kooplen</option>
+                    <option value="1">kooplen</option>
+                </select>
+                <br>
+                <input type="button" value="Add products" onclick="addProducts()">
+                <br>
+                <hr>
+                <span id="Task1"></span>
+
+                <select id="byProducts">
+                    <option value="1"> --Vibirite product--</option>
+                </select>
+                <input id="kolForBy" placeholder="--Enter kolichestvo--">
+                <br>
+                <input type="button" value="By products" onclick="byProducts()"><br>
+                <span id="statysBy"></span>
+            </fieldset>
+        </li>
+        <li>
+            <fieldset>
+                <legend>Task2</legend>
+                <div class="all">
+                    <div class="addBlock">
+                        <input type="text" id="enterTovar" placeholder="Enter name tovara:"><br>
+                        <input type="number" id="enterKol" placeholder="Enter kol. tovara"><br>
+                        <input type="number" id="enterPrise" placeholder="Enter prise"><br>
+                        <input type="button" onclick="AddTovar()" value="Add in check">
+                    </div>
+                    <div class="getCheck">
+                        <span id="chesk"> Check</span>
+                        <br>
+                        <hr>
+                        <span id="all">Itogo:</span>
+                        <br>
+                        <hr>
+                        <span id="seredSum">Suma:</span>
+                        <br>
+                        <hr>
+                        <span id="maxSum">Max:</span>
+                    </div>
+                </div>
+            </fieldset>
+        </li>
+        <li>
+            <fieldset>
+                <legend>Task 3</legend>
+                <input type="button" onclick="styleText()" value="Send"><br>
+            </fieldset>
+        </li>
+        <li>
+            <fieldset>
+                <legend>Task 4</legend>
+                <div class="task4">
+                    <div class="addClass">
+                        <span>Add Auditoriy</span><br>
+                        <input type="text" id="addName" placeholder="Enter name:"><br>
+                        <input type="number" id="addPlase" placeholder="Mest min:10,max:20"><br>
+                        <input type="text" id="addFacult" placeholder="Enter name facultet"><br>
+                        <input type="button" onclick="addClassRoom()" value="Send"><br>
+                        <br>
+                        <span>Add Groop</span><br>
+                        <input type="text" id="addNameGroop" placeholder="Enter name:"><br>
+                        <input type="number" id="addKolGroop" placeholder="Mest min:10,max:20"><br>
+                        <input type="text" id="addFacultGroop" placeholder="Enter name facultet"><br>
+                        <input type="button" onclick="addGroop()" value="Send"><br>
+                    </div>
+                    <div class="setClass">
+                        <span>Free classroom</span><br>
+                        <input type="button" value="sort Name" onclick="SortName()">
+                        <input type="button" value="sort Kol" onclick="SortKol()">
+                        <span id="text4"></span>
+                    </div>
+                    <div class="sortClass">
+                        <select name="sort" id="sortClassRoom">
+                            <option value="1">---Facultets---</option>
+                        </select>
+                        <input type="button" value="found" onclick="getForFacult()">
+                        <span id="text4Facult"></span>
+                        <br>
+                        <select name="sort2" id="sortClassGroop">
+                            <option value="1">---Groops---</option>
+                        </select>
+                        <input type="button" value="found" onclick="getForGroop()">
+                        <span id="text4Groop"></span>
+                    </div>
+                </div>
+            </fieldset>
+        </li>
+    </ul>
+    <script src="main.js"></script>
+</body>
+
+</html>
