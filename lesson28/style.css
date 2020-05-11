@@ -1,0 +1,19 @@
+body{
+    background-color: black;
+    color: #fff;
+}
+li{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    list-style-type: none;
+}
+table{
+    margin: 0 auto;
+}
+th{
+    border: 1px solid #fff;
+}
+td{
+    border: 1px solid #fff;
+}

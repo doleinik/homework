@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <ul>
+        <li>
+            <fieldset>
+                <legend>Task 1</legend>
+                <input type="number" id="getRadius" placeholder="Enter radius kola:">
+                <input type="button" value="send" onclick="getRadius()"><br>
+                <span id="text1"></span>
+            </fieldset>
+        </li>
+        <li>
+            <fieldset>
+                <legend>Task 2</legend>
+
+                <input type="text" id="addText" placeholder="Enter text:">
+                <span id="prosent"></span><br>
+                <input type="button" value="send" onclick="getTexts()"><br>
+                <span id="text2"></span>
+
+            </fieldset>
+        </li>
+        <li>
+            <fieldset>
+                <legend>Task 3</legend>
+                <input type="text" id="addName" placeholder="Enter name:">
+                <input type="number" id="addAge" placeholder="Enter age:">
+                <input type="text" id="addPractic" placeholder="Enter practic:">
+                <input type="button" value="send" onclick="addEnploee()"><br>
+                <table>
+                    <tbody id="table">
+                        <tr>
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>Practic</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </fieldset>
+        </li>
+    </ul>
+    <script src="main.js"></script>
+</body>
+
+</html>
